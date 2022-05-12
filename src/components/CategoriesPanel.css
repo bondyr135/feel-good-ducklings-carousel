@@ -1,17 +1,18 @@
 
-.panel > * {
-  width: 100%;
-  margin: auto;
-  justify-self: center;
-}
-
 .panel {
-  background-color: rgb(198, 232, 255);
+  display: flex;
+  background-color: rgb(124, 183, 223);
+  /* background-color: rgb(198, 232, 255); */
   border-radius: 5px;
   padding: 9px;
-  margin: auto;
+  margin: 0;
   width: 100%; 
-  /* position: relative; */
+  justify-content: center;
+  justify-items: stretch;
+}
+
+.panel > * {
+  margin: auto;
 }
 
 .radio-group {
@@ -21,6 +22,9 @@
 }
 
 .err-msg {
-  position: relative;
+  position: absolute;
   margin: auto;
+  overflow: visible;
+  top: 15%;
+  padding: 3px;
 }

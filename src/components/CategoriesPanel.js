@@ -24,13 +24,13 @@ function CategoriesPanel({ getImages, page, err, nice }) {
   const loadMore = ({ target }) => {
     let newPage = Math.floor(Math.random() * 13);
     // Making sure the page actually changes
-    newPage = newPage === page ? (page + 1) : newPage;
+    newPage = (newPage === page) ? (page + 1) : newPage;
     getImages(newPage);
   }
 
   return (
     <div className="panel">
-      <FormControl >
+      <FormControl sx={{ "width": "100%", "display": "flex" }}>
         <RadioGroup className="radio-group" row onChange={chooseCategory} sx={{
           '& .MuiFormControlLabel-label': { fontSize: '20px', fontWeight: '600', color: "#301934" }
         }}>
@@ -55,7 +55,7 @@ function CategoriesPanel({ getImages, page, err, nice }) {
       </FormControl>
 
       {/* Renders an error if there is one */}
-      {err && <Alert className="err-msg" severity='error' sx={{ 'position': "absolute", "margin": "auto" }}>Something went wrong fetching the photos. Just go have cake...</Alert>}
+      {err && <Alert className="err-msg" severity='error' sx={{ "fontSize": "16px", "fontWeight": "600", "backgroundColor": "#F8C8DC", "margin": "auto", "alignSelf": "end" }}>Something went wrong fetching the photos. Just go have cake...</Alert>}
     </div>
   )
 }

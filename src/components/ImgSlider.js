@@ -38,11 +38,13 @@ const ImgSlider = () => {
     try {
       let rawData = await fetch(
         // `https://api.unsplash.com/search/photos?page=${pageQuery}&QUERY=${query}&client_id=${KEY}`
-        `https://api.unsplash.com/search/photos?page=${pageQuery}&query=${query}&client_id=${API_KEY}`
+        `https://api.unsplash.com/search/photos?page=${pageQuery}&query=${query}&orientation=landscape&client_id=${API_KEY}`
       );
       let data = await rawData.json();
       if (isErr) setIsErr(false);
+
       aux = data.results.map(d => {
+        console.log(d.description, d.height + ' X ' + d.width)
         return { image: d.urls.regular, description: d.description || d.alt_description || '' }
       })
     } catch (e) {
