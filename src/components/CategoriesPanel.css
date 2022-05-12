@@ -1,0 +1,26 @@
+
+.panel > * {
+  width: 100%;
+  margin: auto;
+  justify-self: center;
+}
+
+.panel {
+  background-color: rgb(198, 232, 255);
+  border-radius: 5px;
+  padding: 9px;
+  margin: auto;
+  width: 100%; 
+  /* position: relative; */
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+}
+
+.err-msg {
+  position: relative;
+  margin: auto;
+}
