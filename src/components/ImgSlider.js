@@ -12,7 +12,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { CircularProgress } from '@mui/material';
 
 const ImgSlider = () => {
-
+  let API_KEY = process.env.REACT_APP_API_KEY || KEY;
   /*
     State:
       1) Images currently held
@@ -38,7 +38,7 @@ const ImgSlider = () => {
     try {
       let rawData = await fetch(
         // `https://api.unsplash.com/search/photos?page=${pageQuery}&QUERY=${query}&client_id=${KEY}`
-        `https://api.unsplash.com/search/photos?page=${pageQuery}&query=${query}&client_id=${KEY}`
+        `https://api.unsplash.com/search/photos?page=${pageQuery}&query=${query}&client_id=${API_KEY}`
       );
       let data = await rawData.json();
       if (isErr) setIsErr(false);
