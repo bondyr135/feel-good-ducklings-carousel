@@ -11,7 +11,7 @@ function Category({ name }) {
     <FormControlLabel
       control={<Radio sx={{ '&.Mui-checked': { color: '#c442eb' } }} />}
       labelPlacement="top"
-      label={name}
+      label={name.endsWith('s') ? name : (name + 's')}
       name={name}
       value={name}
     />

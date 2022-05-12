@@ -36,7 +36,6 @@ function CategoriesPanel({ getImages, page, err, nice }) {
         }}>
           {
             CATEGORIES.map(cat => {
-              cat = (cat.endsWith('s')) ? cat : (cat + 's');
               return <Category name={cat} key={cat} />
             })
           }
