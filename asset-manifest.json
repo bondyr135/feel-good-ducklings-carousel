@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/feel-good-ducklings-carousel/static/css/main.63151f2a.css",
+    "main.css": "/feel-good-ducklings-carousel/static/css/main.8063afae.css",
     "main.js": "/feel-good-ducklings-carousel/static/js/main.c994a19c.js",
     "static/js/787.ab86337c.chunk.js": "/feel-good-ducklings-carousel/static/js/787.ab86337c.chunk.js",
     "index.html": "/feel-good-ducklings-carousel/index.html",
-    "main.63151f2a.css.map": "/feel-good-ducklings-carousel/static/css/main.63151f2a.css.map",
+    "main.8063afae.css.map": "/feel-good-ducklings-carousel/static/css/main.8063afae.css.map",
     "main.c994a19c.js.map": "/feel-good-ducklings-carousel/static/js/main.c994a19c.js.map",
     "787.ab86337c.chunk.js.map": "/feel-good-ducklings-carousel/static/js/787.ab86337c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63151f2a.css",
+    "static/css/main.8063afae.css",
     "static/js/main.c994a19c.js"
   ]
 }
