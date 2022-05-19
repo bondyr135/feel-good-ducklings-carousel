@@ -1,7 +1,7 @@
 # Just a photo carousel
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-I was wondering how photo carousels are built, so I tried... t'was OK.
+I was wondering how photo carousels are built, so I tried... t'was OK.\
 All photos are cruelty-free, feel-good vegan photos. 
 
 ## Available Scripts
